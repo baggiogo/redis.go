@@ -1361,6 +1361,7 @@ func (client *Client) Bgsave() os.Error {
     return nil
 }
 
+
 func (client *Client) Lastsave() (int64, os.Error) {
     res, err := client.sendCommand("LASTSAVE")
     if err != nil {
